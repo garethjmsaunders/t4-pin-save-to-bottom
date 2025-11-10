@@ -15,7 +15,7 @@ This userstyle keeps them fixed to the bottom of the browser window so you can s
    - Firefox: [Stylus on Mozilla Add-ons](https://addons.mozilla.org/en-GB/firefox/addon/styl-us/)
 2. Create a new style.
 3. Paste in the CSS from this repository.
-4. In the **Domains** field, enter:
+4. In the **Domains** field, enter the URL for your T4 server.
 5. Save and enable the style.
 
 ## Features
