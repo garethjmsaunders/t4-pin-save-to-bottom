@@ -1,0 +1,41 @@
+/* Remember to add the correct domain to the Style script
+   for example, t4.example.com */
+.form-actions.text-right {
+  position: fixed !important;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #fff !important;
+  padding: 10px 20px !important;
+  box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.15);
+  border-top: 1px solid #ccc;
+  z-index: 9999 !important;
+  text-align: right;
+}
+
+/* Ensure buttons stay aligned and readable */
+.form-actions.text-right .btn,
+.form-actions.text-right .btn-group {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+/* Ensure pinned buttons don't cover back to top button  */
+.form-actions.text-right {
+  margin-bottom: 35px;
+}
+
+/* Add space so page content isn’t hidden behind the fixed bar */
+body, #content, main, .page-content {
+  padding-bottom: 80px !important;
+}
+
+/* Subtle fade animation on entry */
+.form-actions.text-right {
+  animation: fadeUp 0.3s ease-out;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
