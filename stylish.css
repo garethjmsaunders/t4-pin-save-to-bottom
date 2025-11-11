@@ -2,17 +2,20 @@
    for example, t4.example.com */
 
 /* Fixed action bar with top and bottom shadows */
+/* Fixed action bar with top and bottom shadows */
 .form-actions.text-right {
   position: fixed !important;
-  bottom: 0;
   left: 0;
   right: 0;
+  bottom: 0 !important;
   background: #fff !important;
+  border-top: 1px solid #ccc !important;
+  box-shadow:
+    0 -2px 4px rgba(0, 0, 0, 0.05),
+    0 4px 12px rgba(0, 0, 0, 0.15);
   padding: 10px 20px !important;
-  box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.15);
-  border-top: 1px solid #ccc;
-  z-index: 9999 !important;
-  text-align: right;
+  z-index: 2147483647 !important;
+  transition: bottom 0.3s ease;
 }
 
 /* Ensure buttons stay aligned and readable */
