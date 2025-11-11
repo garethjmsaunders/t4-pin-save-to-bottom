@@ -1,0 +1,39 @@
+/* Pin the action bar */
+.form-actions.text-right {
+  position: fixed !important;
+  left: 0;
+  right: 0;
+  bottom: 0 !important;
+  background: #fff !important;
+  border-top: 1px solid #ccc !important;
+  box-shadow:
+    0 -2px 4px rgba(0, 0, 0, 0.05),
+    0 4px 12px rgba(0, 0, 0, 0.15);
+  padding: 10px 20px !important;
+  z-index: 2147483647 !important;
+  transition: bottom 0.2s ease;
+}
+
+/* Add page bottom padding so content is not obscured */
+html, body,
+#content, #page-content, .main-content, .page-content,
+.tab-content, .container, .container-fluid, .row {
+  padding-bottom: 96px !important;
+}
+
+/* Escape transforms and clipping that can break fixed bars */
+.main-content, .page-content, #content, #page-content,
+.container, .container-fluid {
+  transform: none !important;
+  filter: none !important;
+  perspective: none !important;
+}
+.main-content, .page-content, #content, #page-content,
+.container, .container-fluid, .row {
+  overflow: visible !important;
+}
+
+/* When body has a helper class, lift above Back to top */
+body.t4-lift-actionbar .form-actions.text-right {
+  bottom: 56px !important; /* adjust if your button is taller */
+}
