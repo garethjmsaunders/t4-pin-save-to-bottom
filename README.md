@@ -1,6 +1,12 @@
-# Fix T4 Edit Action Bar
+# T4 Pin Save to bottom
 
 This userstyle pins the **Save / Cancel / Delete** action bar to the bottom of the viewport in the **TerminalFour content edit interface** at the University of St Andrews. It ensures the form actions remain visible while scrolling through long content forms.
+
+## UPDATE - add-on
+
+I've now also included code that should work as an extension in Chrome and Firefox.
+
+⚠️ Note: Firefox is untested and will only currently work loaded locally each time you start Firefox. I still need to test this and get it signed by AMO (addons.mozilla.org).
 
 ## Overview
 

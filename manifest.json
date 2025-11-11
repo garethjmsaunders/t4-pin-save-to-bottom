@@ -1,8 +1,13 @@
 {
   "manifest_version": 3,
-  "name": "T4 Edit Action Bar Fix",
-  "version": "1.0.1",
+  "name": "T4 Pin Save to bottom",
+  "version": "1.2.0",
   "description": "Pins the T4 edit action bar to the bottom with shadows and avoids overlap with Back to top.",
+  "icons": {
+    "16": "icon-16.png",
+    "32": "icon-32.png",
+    "128": "icon-128.png"
+  },  
   "content_scripts": [
     {
       "matches": [
