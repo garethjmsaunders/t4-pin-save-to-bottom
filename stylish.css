@@ -17,29 +17,31 @@
   transition: bottom 0.3s ease;
 }
 
-/* Ensure buttons stay aligned and readable */
-.form-actions.text-right .btn,
-.form-actions.text-right .btn-group {
-  margin-top: 0 !important;
-  margin-bottom: 0 !important;
-}
+  /* Ensure buttons stay aligned and readable */
+  .form-actions.text-right .btn,
+  .form-actions.text-right .btn-group {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+  }
 
-/* Ensure pinned buttons don't cover back to top button  */
 .form-actions.text-right {
   margin-bottom: 35px;
 }
 
-/* Add space so page content isn’t hidden behind the fixed bar */
-body, #content, main, .page-content {
-  padding-bottom: 80px !important;
-}
+  /* Add space so page content isn’t hidden behind the fixed bar */
+  body,
+  #content,
+  main,
+  .page-content {
+    padding-bottom: 80px !important;
+  }
 
-/* Subtle fade animation on entry */
-.form-actions.text-right {
-  animation: fadeUp 0.3s ease-out;
-}
+  /* Optional: subtle fade animation on entry */
+  .form-actions.text-right {
+    animation: fadeUp 0.3s ease-out;
+  }
 
-@keyframes fadeUp {
-  from { opacity: 0; transform: translateY(10px); }
-  to { opacity: 1; transform: translateY(0); }
-}
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
